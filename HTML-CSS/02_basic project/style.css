@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:white ;
+    
+}
+#nav{
+    width: 100%;
+    display: flex;
+    justify-items:center ;
+    justify-content: flex-end;
+    gap: 30PX;
+    padding: 0px 30px ;
+    margin-top: 10px;
+}
+#nav h4{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+#nav h4:hover{
+    background-color: rgb(220, 223, 225);
+
+}
+#nav i{
+    background-color: black;
+    color: white;
+    font-weight:500 ;
+    font-size: 20px;
+    border-radius: 50% ;
+}
+#center{
+    
+    width: 100%;
+    
+    padding: 40px 80px;
+}
+#center h1{
+    font-size: 80px;
+    line-height: 90px;
+    font-weight: 500;
+}
+#center-in{
+    width: 100%;    
+    padding: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#center-in p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+#right{
+    width: 20%;
+}
+.ele{
+    /* background-color:yellow; */
+    /* margin: 5px; */
+    padding: 20px 0;
+    display: flex;
+    border-top: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.ele i{
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+    
+}
+.ele:hover i{
+    opacity: 1;
+}
+.ele:hover{
+    background-color: rgb(243, 245, 248);
+}
+.ele:hover a{
+    text-decoration: underline;
+}
+.ele a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+#bottom{
+    height: 15%;
+    width: 100%;
+    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1500305614571-ae5b6592e65d?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 12%;
+    
+}

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    /* background-color: #F8F9F4; */
+}
+#page1{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+#nav{
+    height: 120px;
+    width: 100%;
+    /* background-color: brown; */
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+     height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#nav-part1{
+    width: 28%;
+    /* background-color: yellow;     */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-part h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+nav-part2{
+    width: 25%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#nav-part2 button{
+    padding: 12px 18px;
+    font-weight: 6000;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    margin: 0 10px;
+}
+#nav-part2 button:nth-child(1){
+    background-color: transparent;
+    color: #000;
+}
+
+
+
+#content{
+    width: 100%;
+    height: calc(100% - 120px);
+    background-color: rgb(208, 226, 213);
+    padding: 85px;
+}
+#content h3{
+    background-color:#F2B0EA ;
+    padding: 8px 16px;
+    width: fit-content;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-family: "Source Serif 4";
+    font-weight: 100;
+}
+#content h1{
+    text-align: center;
+    font-size: 80px;
+    margin: 15px 0;
+    font-family: "Source Serif 4";
+    line-height: 80px;
+
+}
+#content h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+#content button{
+    padding: 12px 18px;
+    font-weight: 6000;
+    border: none;
+    background-color: black;
+    color: white;       
+    font-size: 18px;
+    margin: 20px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+#content {
+    width: 100%;
+    height: calc(100% - 120px);
+    background-color: rgb(208, 226, 213);
+    padding: 85px 0; 
+}
+
+#bootom{
+    height: 400px;
+     width: 100%;
+    background-color: red;
+    padding: 5px;
+     gap: 30px;
+    display: flex;  //sare ek line me aajeyge but side bikar ho jayege
+    flex-wrap: nowrap; /// unka size bikar nhi hoga  nowrap se orginl size m rhege but main div se bahir niklege
+    overflow-y: hidden; // jo bahir nikl rhe hai main div se uska y axis me hiide kr dega
+    
+    
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 250px;
+    /* padding: 5px; */
+    background-color: royalblue;
+    border: 2px solid black;
+    
+}
