@@ -1,26 +1,28 @@
 const express = require("express");
-const { skipMiddlewareFunction } = require("mongoose");
-const app = express()
+const app = express();
 
-require("dotenv").config()
+require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 
-//Middleware
-app.use(express.json())
+// Middleware
+app.use(express.json());
 
-const blog = require('./routes/blog')
-//mount
-app.use("/api/v1",blog)
+// Import Routes
+const blog = require('./routes/blog');
 
-const connectionwithdb = require("./config/database")
-connectionwithdb()
+// Mount Routes
+app.use("/api/v1", blog);
 
+// DB Connection
+const connectionwithdb = require("./config/database");
+connectionwithdb();
 
-app.listen(PORT,()=>{
-    console.log(`app is start at ${PORT}`)
-})
+// Start server
+app.listen(PORT, () => {
+    console.log(`App is started at port ${PORT}`);
+});
 
-
-app.get('/',(req,res)=>{
-    res.send(`<h1>this is homepage baby</h1>`)
-})
+// Homepage Route
+app.get('/', (req, res) => {
+    res.send(`<h1>This is homepage, baby!</h1>`);
+});
